@@ -6,9 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.viewModel.DogViewModel
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
+
+    val viewModel by  viewModels<DogViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
