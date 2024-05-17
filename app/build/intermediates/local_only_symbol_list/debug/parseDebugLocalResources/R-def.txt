@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable background_bt_black
+drawable background_bt_orange
+drawable background_bt_white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable icon_burger_menu
+id burger_menu
+id dog_img
+id dogs_button
+id linearLayout
+id main
+id random_button
+id recycler_dogs
+id textView
+id us_button
+layout activity_main
+layout item_dog
+mipmap ic_launcher
+mipmap ic_launcher_round
+string adopt_me
+string app_name
+string friend
+string search
+style Base.Theme.MyApplication
+style Theme.MyApplication
+xml backup_rules
+xml data_extraction_rules
