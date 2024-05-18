@@ -50,6 +50,13 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    // ViewModel y LiveData
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+
+    // Otras dependencias necesarias
+    implementation ("androidx.fragment:fragment-ktx:1.5.1")
+
     //picasso
     implementation("com.squareup.picasso:picasso:2.71828")
 

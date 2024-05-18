@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -33,6 +33,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final LinearLayout linearLayout;
 
   @NonNull
+  public final RelativeLayout loadingScreen;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -42,20 +45,21 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RecyclerView recyclerDogs;
 
   @NonNull
-  public final TextView textView;
+  public final ImageView textView;
 
   @NonNull
   public final AppCompatButton usButton;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView burgerMenu,
       @NonNull AppCompatButton dogsButton, @NonNull LinearLayout linearLayout,
-      @NonNull ConstraintLayout main, @NonNull AppCompatButton randomButton,
-      @NonNull RecyclerView recyclerDogs, @NonNull TextView textView,
-      @NonNull AppCompatButton usButton) {
+      @NonNull RelativeLayout loadingScreen, @NonNull ConstraintLayout main,
+      @NonNull AppCompatButton randomButton, @NonNull RecyclerView recyclerDogs,
+      @NonNull ImageView textView, @NonNull AppCompatButton usButton) {
     this.rootView = rootView;
     this.burgerMenu = burgerMenu;
     this.dogsButton = dogsButton;
     this.linearLayout = linearLayout;
+    this.loadingScreen = loadingScreen;
     this.main = main;
     this.randomButton = randomButton;
     this.recyclerDogs = recyclerDogs;
@@ -108,6 +112,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loading_screen;
+      RelativeLayout loadingScreen = ViewBindings.findChildViewById(rootView, id);
+      if (loadingScreen == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.random_button;
@@ -123,7 +133,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      ImageView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
         break missingId;
       }
@@ -135,7 +145,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, burgerMenu, dogsButton,
-          linearLayout, main, randomButton, recyclerDogs, textView, usButton);
+          linearLayout, loadingScreen, main, randomButton, recyclerDogs, textView, usButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

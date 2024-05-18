@@ -8,10 +8,12 @@ drawable background_bt_white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_burger_menu
+drawable search_friend
 id burger_menu
 id dog_img
 id dogs_button
 id linearLayout
+id loading_screen
 id main
 id random_button
 id recycler_dogs
