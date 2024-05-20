@@ -8,131 +8,141 @@
 8        android:minSdkVersion="26"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 16
-17    <application
-17-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:5:5-24:19
-18        android:allowBackup="true"
-18-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.MyApplication" >
-29-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:13:9-51
-30        <activity
-30-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="com.example.myapplication.MainActivity"
-31-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:16:13-41
-32            android:exported="true" >
-32-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:17:13-36
-33            <intent-filter>
-33-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:18:13-22:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:19:17-69
-34-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:19:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:21:17-77
-36-->C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:21:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-42            android:authorities="com.example.myapplication.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-50            <meta-data
-50-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-51-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-52                android:value="androidx.startup" />
-52-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-53        </provider>
-54        <provider
-54-->[com.squareup.picasso:picasso:2.71828] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
-55            android:name="com.squareup.picasso.PicassoProvider"
-55-->[com.squareup.picasso:picasso:2.71828] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
-56            android:authorities="com.example.myapplication.com.squareup.picasso"
-56-->[com.squareup.picasso:picasso:2.71828] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
-57            android:exported="false" />
-57-->[com.squareup.picasso:picasso:2.71828] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
-58
-59        <receiver
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-60            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-61            android:directBootAware="false"
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-62            android:enabled="true"
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-63            android:exported="true"
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-64            android:permission="android.permission.DUMP" >
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-65            <intent-filter>
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-66                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-67            </intent-filter>
-68            <intent-filter>
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-69                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-70            </intent-filter>
-71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-72                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-73            </intent-filter>
-74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-75                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-76            </intent-filter>
-77        </receiver>
-78    </application>
-79
-80</manifest>
+17    <uses-permission android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:5:5-27:19
+20        android:allowBackup="true"
+20-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:6:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.13.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\c9948e1bd03e0bd70a9e358bc0764210\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:7:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:8:9-54
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:9:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:10:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:11:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:12:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.MyApplication" >
+31-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:13:9-51
+32        <activity
+32-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:15:9-17:40
+33            android:name="com.example.myapplication.GridDogsActivity"
+33-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:16:13-45
+34            android:exported="false" />
+34-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:17:13-37
+35        <activity
+35-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:18:9-26:20
+36            android:name="com.example.myapplication.MainActivity"
+36-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:19:13-41
+37            android:exported="true" >
+37-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:20:13-36
+38            <intent-filter>
+38-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:21:13-25:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:22:17-69
+39-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:22:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:24:17-77
+41-->C:\Users\Reinier de Armas\AndroidStudioProjects\pets_app\app\src\main\AndroidManifest.xml:24:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+47            android:authorities="com.example.myapplication.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\1eb79e970452cbd454db68648c2c6f9b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\57d8f45213c197a0d418f5513ada7b3b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+57                android:value="androidx.startup" />
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+58        </provider>
+59        <provider
+59-->[com.squareup.picasso:picasso:2.71828] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+60            android:name="com.squareup.picasso.PicassoProvider"
+60-->[com.squareup.picasso:picasso:2.71828] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+61            android:authorities="com.example.myapplication.com.squareup.picasso"
+61-->[com.squareup.picasso:picasso:2.71828] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+62            android:exported="false" />
+62-->[com.squareup.picasso:picasso:2.71828] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\fcd03e96ee9f51be6c4a13fabf747b67\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+63
+64        <receiver
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+66            android:directBootAware="false"
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+67            android:enabled="true"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+68            android:exported="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+69            android:permission="android.permission.DUMP" >
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+70            <intent-filter>
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+72            </intent-filter>
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reinier de Armas\.gradle\caches\transforms-3\90a9083031bd9e6b1cee2a00b0f2c00c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+81            </intent-filter>
+82        </receiver>
+83    </application>
+84
+85</manifest>

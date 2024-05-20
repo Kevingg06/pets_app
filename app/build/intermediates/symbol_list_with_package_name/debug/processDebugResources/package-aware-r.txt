@@ -2981,6 +2981,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_volver
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3007,6 +3008,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable icon_burger_menu
+drawable icon_fingerprint
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3287,9 +3289,12 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id gl_end
 id gone
 id graph
 id graph_wrap
+id grid
+id grid_dog_img
 id group_divider
 id grouping
 id groups
@@ -3305,6 +3310,9 @@ id icon_group
 id ifRoom
 id ignore
 id ignoreRequest
+id im_btn_back
+id im_fingerprint
+id im_search
 id image
 id immediateStop
 id included
@@ -3449,6 +3457,7 @@ id random_button
 id ratio
 id rectangles
 id recycler_dogs
+id recycler_grid_dogs
 id report_drawn
 id reverseSawtooth
 id right
@@ -3703,6 +3712,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_griddogs
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3723,6 +3733,7 @@ layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_dog
+layout item_griddogs
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3949,6 +3960,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string rcv_grid_desc
 string search
 string search_menu_title
 string searchbar_scrolling_view_behavior

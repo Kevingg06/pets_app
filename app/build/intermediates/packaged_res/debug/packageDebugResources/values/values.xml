@@ -5,6 +5,7 @@
     <string name="adopt_me">Adoptame</string>
     <string name="app_name">My Application</string>
     <string name="friend">Friend</string>
+    <string name="rcv_grid_desc">Perritos</string>
     <string name="search">Search</string>
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
         

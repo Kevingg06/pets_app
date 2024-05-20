@@ -1,10 +1,22 @@
 [
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/activity_main.xml",
-        "source": "com.example.myapplication.app-main-6:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-37:\\layout\\activity_griddogs.xml",
+        "source": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-40:\\layout\\activity_griddogs.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/item_dog.xml",
-        "source": "com.example.myapplication.app-main-6:/layout/item_dog.xml"
+        "merged": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-37:/layout/item_griddogs.xml",
+        "source": "com.example.myapplication.app-main-40:/layout/item_griddogs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-37:\\layout\\item_griddogs.xml",
+        "source": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-40:\\layout\\item_griddogs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-37:\\layout\\item_dog.xml",
+        "source": "C:\\Users\\Reinier de Armas\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-40:\\layout\\item_dog.xml"
     }
 ]

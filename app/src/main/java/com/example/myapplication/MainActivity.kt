@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -10,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.viewModel.DogViewModel
+import com.example.myapplication.viewModel.StateGridViewModel
 import com.example.myapplication.viewModel.StateViewModel
 
 
@@ -27,6 +29,9 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        binding.dogsButton.setOnClickListener {
+            startActivity(Intent(this, GridDogsActivity::class.java))
         }
         call()
         observer()
@@ -51,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                 is StateViewModel.Error -> {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
                 }
+
             }
         }
     }
