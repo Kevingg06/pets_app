@@ -32,5 +32,4 @@ class SearchDogViewModel(private val repository: SearchDogRepository = SearchDog
     fun getData(): LiveData<StateSearchDogViewModel>{
         return this.data
     }
-
 }

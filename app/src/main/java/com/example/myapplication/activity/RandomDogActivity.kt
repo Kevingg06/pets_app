@@ -1,20 +1,13 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.GridLayoutManager
-import com.example.myapplication.databinding.ActivityGriddogsBinding
 import com.example.myapplication.databinding.ActivityRandomDogBinding
-import com.example.myapplication.viewModel.GridDogViewModel
 import com.example.myapplication.viewModel.ImageClass
 import com.example.myapplication.viewModel.RandomDogViewModel
-import com.example.myapplication.viewModel.StateGridViewModel
 import com.example.myapplication.viewModel.StateRandomDogViewModel
 import com.squareup.picasso.Picasso
 
@@ -60,6 +53,7 @@ class RandomDogActivity : AppCompatActivity() {
                 is StateRandomDogViewModel.Success -> {
                     initImage((data.info.message ?: "").toString())
                 }
+
                 is StateRandomDogViewModel.Error -> {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
                 }
@@ -67,9 +61,9 @@ class RandomDogActivity : AppCompatActivity() {
         }
 
         ////viewModel.selectedImageUrl.observe(this) { imageUrl ->
-            ////if (imageUrl != null) {
+        ////if (imageUrl != null) {
 //                navigateToImageDetails(imageUrl)
-            ////}
+        ////}
         ////}
     }
 

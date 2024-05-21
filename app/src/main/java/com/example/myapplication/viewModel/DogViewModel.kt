@@ -39,4 +39,3 @@ class DogViewModel(private val repository: DogRepository = DogRepository()) : Vi
         ImageClass.imageGrid = imageUrl
     }
 }
-

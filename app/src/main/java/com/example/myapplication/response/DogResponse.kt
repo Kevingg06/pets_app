@@ -10,5 +10,4 @@ data class DogResponse(
 
     @SerializedName("status")
     val status: String?
-
 )

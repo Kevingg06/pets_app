@@ -19,5 +19,4 @@ class RandomDogServiceImp {
     suspend fun getRandomDogs(): Response<RandomDogResponse> {
         return service.getRandomDog()
     }
-
 }

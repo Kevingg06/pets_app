@@ -41,4 +41,3 @@ class GridDogViewModel(private val repository: GridDogRepository = GridDogReposi
         ImageClass.imageGrid = imageUrl
     }
 }
-

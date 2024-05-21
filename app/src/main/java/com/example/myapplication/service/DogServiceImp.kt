@@ -18,5 +18,4 @@ class DogServiceImp {
     suspend fun getDogs(): Response<DogResponse> {
         return service.getDogs()
     }
-
 }

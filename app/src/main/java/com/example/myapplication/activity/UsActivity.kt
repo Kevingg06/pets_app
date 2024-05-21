@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.myapplication.R
+import com.example.myapplication.adapter.AboutUsAdapter
+import com.example.myapplication.adapter.UsAdapter
 import com.example.myapplication.databinding.ActivityUsBinding
 
 class UsActivity : AppCompatActivity() {
@@ -21,16 +24,15 @@ class UsActivity : AppCompatActivity() {
             insets
         }
 
-        val listaImagenes = listOf(
+        val imageList = listOf(
             "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg",
             "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg",
             "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg"
         )
         actions()
-        initRecyclerView(listaImagenes)
-        initRecyclerView2(listaImagenes)
+        initRecyclerView(imageList)
+        initRecyclerView2(imageList)
     }
-
 
     private fun actions() {
         binding.goBack.setOnClickListener {

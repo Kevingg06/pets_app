@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,19 +17,19 @@ class DetailsDogsActivity : AppCompatActivity() {
 
         loadImage()
 
-        binding.imBtnBack.setOnClickListener{
+        binding.imBtnBack.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
-        binding.foodButton.setOnClickListener{
+        binding.foodButton.setOnClickListener {
             binding.tvFeatures.setText("Ese perrito come mucho ceral")
         }
-        binding.doctorButton.setOnClickListener{
+        binding.doctorButton.setOnClickListener {
             binding.tvFeatures.setText("Ese perrito tiene que ir periodicamente al veterinario")
         }
-        binding.homeButton.setOnClickListener{
+        binding.homeButton.setOnClickListener {
             binding.tvFeatures.setText("Ese perrito vive en ambiente tropical")
         }
-        binding.pawButton.setOnClickListener{
+        binding.pawButton.setOnClickListener {
             binding.tvFeatures.setText("Ese perrito su raza es unica")
         }
 

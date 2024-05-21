@@ -11,5 +11,4 @@ interface SearchDogService {
     @GET("breed/{breed}/images/random")
 
     suspend fun getSearchDogs(@Path("breed") breed: String): Response<SearchDogResponse>
-
 }
