@@ -9,6 +9,6 @@ data class DogResponse(
     val message: List<String>?,
 
     @SerializedName("status")
-    val status: String
+    val status: String?
 
 )

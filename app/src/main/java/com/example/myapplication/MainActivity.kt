@@ -2,7 +2,6 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -41,15 +40,15 @@ class MainActivity : AppCompatActivity() {
             when (data) {
                 is StateViewModel.Success -> {
                     hideLoading()
-                    initRecyclerView(data.info.message ?: listOf())
+                    initRecyclerView(data.info.message ?: listOf("https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg"))
                 }
 
-                is StateViewModel.loading -> {
+                is StateViewModel.Loading -> {
                     showLoading()
                 }
 
                 is StateViewModel.Error -> {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+
                 }
             }
         }
