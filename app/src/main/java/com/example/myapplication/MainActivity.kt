@@ -29,13 +29,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.dogsButton.setOnClickListener {
-            startActivity(Intent(this, GridDogsActivity::class.java))
-        }
-
-        binding.randomButton.setOnClickListener {
-            startActivity(Intent(this, RandomDogActivity::class.java))
-        }
 
         call()
         actions()
@@ -85,12 +78,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
         binding.dogsButton.setOnClickListener {
-            // val myIntent = Intent(this, DogsActivity::class.java)
-            // startActivity(myIntent)
+            val myIntent = Intent(this, GridDogsActivity::class.java)
+            startActivity(myIntent)
         }
         binding.randomButton.setOnClickListener {
-            // val myIntent = Intent(this, RandomActivity::class.java)
-            // startActivity(myIntent)
+            val myIntent = Intent(this, RandomDogActivity::class.java)
+            startActivity(myIntent)
         }
         binding.searchButton.setOnClickListener {
             // val myIntent = Intent(this, SearchActivity::class.java)
