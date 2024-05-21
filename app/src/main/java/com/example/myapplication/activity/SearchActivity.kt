@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import com.example.myapplication.databinding.ActivitySearchBinding
+import com.example.myapplication.viewModel.ImageClass
 import com.example.myapplication.viewModel.SearchDogViewModel
 import com.example.myapplication.viewModel.StateSearchDogViewModel
 import com.squareup.picasso.Picasso
@@ -26,8 +27,16 @@ class SearchActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
+        binding.dogPhoto.setOnClickListener {
+            clickPhoto()
+        }
+
         buscadorDog()
         observer()
+    }
+
+    private fun clickPhoto() {
+        navigateToImageDetails()
     }
 
     private fun buscadorDog() {
@@ -67,5 +76,11 @@ class SearchActivity : AppCompatActivity() {
 
     private fun initImage(value: String) {
         Picasso.get().load(value).into(binding.dogPhoto)
+        ImageClass.imageGrid = value
+    }
+
+    private fun navigateToImageDetails() {
+        val intent = Intent(this, DetailsDogsActivity::class.java)
+        startActivity(intent)
     }
 }

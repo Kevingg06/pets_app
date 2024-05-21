@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerDogs.adapter = adapter
     }
 
-    fun actions() {
+    private fun actions() {
         binding.usButton.setOnClickListener {
             val myIntent = Intent(this, UsActivity::class.java)
             startActivity(myIntent)

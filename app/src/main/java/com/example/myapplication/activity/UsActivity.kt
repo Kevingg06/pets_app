@@ -37,8 +37,8 @@ class UsActivity : AppCompatActivity() {
         )
 
         actions()
-        initRecyclerView(imageList)
-        initRecyclerView2(imageListHobbie)
+        initRecyclerView(imageListHobbie)
+        initRecyclerView2(imageList)
     }
 
     private fun actions() {
