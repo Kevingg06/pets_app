@@ -13,7 +13,7 @@ class GridDogViewModel(private val repository: GridDogRepository = GridDogReposi
     private val data: LiveData<StateGridViewModel> = _data
 
     private val _selectedImageUrl = MutableLiveData<String?>()
-    val selectedImageUrl: LiveData<String?> = _selectedImageUrl
+    private val selectedImageUrl: LiveData<String?> = _selectedImageUrl
 
     fun getGridDogs() {
         CoroutineScope(Dispatchers.IO).launch {
@@ -32,9 +32,13 @@ class GridDogViewModel(private val repository: GridDogRepository = GridDogReposi
         return this.data
     }
 
+    fun getImage(): LiveData<String?>{
+        return this.selectedImageUrl
+    }
+
     fun onImageClicked(imageUrl: String) {
         _selectedImageUrl.value = imageUrl
-        ImageGridClick.imageGrid = imageUrl
+        ImageClass.imageGrid = imageUrl
     }
 }
 

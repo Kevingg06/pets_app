@@ -3353,6 +3353,8 @@ id listMode
 id list_item
 id ll_details1
 id ll_details2
+id ll_detailsbtn
+id ll_detailstv
 id loading_screen
 id m3_side_sheet
 id main

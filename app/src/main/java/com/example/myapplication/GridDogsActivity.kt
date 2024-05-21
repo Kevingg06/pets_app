@@ -3,11 +3,8 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.myapplication.databinding.ActivityGriddogsBinding
 import com.example.myapplication.viewModel.GridDogViewModel
@@ -54,11 +51,8 @@ class GridDogsActivity : AppCompatActivity() {
             }
         }
 
-        viewModel.selectedImageUrl.observe(this) { //imageUrl ->
-            //if (imageUrl != null) {
-                //navigateToImageDetails(imageUrl)
+        viewModel.getImage().observe(this) {
                 navigateToImageDetails()
-            //}
         }
     }
 
@@ -72,7 +66,6 @@ class GridDogsActivity : AppCompatActivity() {
     //private fun navigateToImageDetails(imageUrl: String) {
     private fun navigateToImageDetails() {
         val intent = Intent(this, DetailsDogsActivity::class.java)
-        //intent.putExtra("imageUrl", imageUrl)
         startActivity(intent)
     }
 

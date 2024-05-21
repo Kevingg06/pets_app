@@ -39,6 +39,8 @@ id im_search
 id linearLayout
 id ll_details1
 id ll_details2
+id ll_detailsbtn
+id ll_detailstv
 id loading_screen
 id main
 id main_details

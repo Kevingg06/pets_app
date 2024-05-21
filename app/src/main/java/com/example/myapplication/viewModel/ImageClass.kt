@@ -1,5 +1,5 @@
 package com.example.myapplication.viewModel
 
-object ImageGridClick {
+object ImageClass {
     var imageGrid: String? = ""
 }

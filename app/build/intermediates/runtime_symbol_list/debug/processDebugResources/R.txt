@@ -3352,6 +3352,8 @@ int id listMode 0x7f0800f9
 int id list_item 0x7f0800fa
 int id ll_details1 0x7f08020c
 int id ll_details2 0x7f08020d
+int id ll_detailsbtn 0x7f080211
+int id ll_detailstv 0x7f080212
 int id loading_screen 0x7f0800fb
 int id m3_side_sheet 0x7f0800fc
 int id main 0x7f0800fd

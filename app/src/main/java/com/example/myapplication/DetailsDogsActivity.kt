@@ -2,21 +2,14 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityDetailsdogsBinding
-import com.example.myapplication.databinding.ActivityGriddogsBinding
-import com.example.myapplication.viewModel.GridDogViewModel
-import com.example.myapplication.viewModel.ImageGridClick
+import com.example.myapplication.viewModel.ImageClass
 import com.squareup.picasso.Picasso
 
 class DetailsDogsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsdogsBinding
 
-    //private val viewModel by viewModels<GridDogViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsdogsBinding.inflate(layoutInflater)
@@ -43,6 +36,6 @@ class DetailsDogsActivity : AppCompatActivity() {
     }
 
     private fun loadImage() {
-        Picasso.get().load(ImageGridClick.imageGrid).into(binding.imDetail)
+        Picasso.get().load(ImageClass.imageGrid).into(binding.imDetail)
     }
 }
