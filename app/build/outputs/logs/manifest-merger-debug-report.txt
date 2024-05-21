@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.databinding:viewbinding:8.3.1] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\fcf5f3534d2797d90d840b7f1d899f81\transformed\viewbinding-8.3.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\4ce64730b86c763a51a77a38d4ea85ef\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\89065a36ea6dc29d22f39d9f3a201aff\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -66,12 +66,12 @@ MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Flia Gonzalez\.g
 	xmlns:android
 		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:7:5-26:19
-INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:7:5-26:19
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:7:5-29:19
+INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:7:5-29:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\4ce64730b86c763a51a77a38d4ea85ef\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\4ce64730b86c763a51a77a38d4ea85ef\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Flia Gonzalez\.gradle\caches\transforms-3\89065a36ea6dc29d22f39d9f3a201aff\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -112,22 +112,28 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fl
 		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:15:9-51
 	android:dataExtractionRules
 		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.myapplication.MainActivity
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:17:9-25:20
+activity#com.example.myapplication.UsActivity
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:19:13-36
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:18:13-39
+activity#com.example.myapplication.MainActivity
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:20:9-28:20
+	android:exported
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Mis proyectos\MyApplication2\app\src\main\AndroidManifest.xml

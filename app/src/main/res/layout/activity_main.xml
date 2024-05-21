@@ -74,6 +74,7 @@
             android:textColor="@color/black" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_button"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"

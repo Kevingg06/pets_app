@@ -2970,6 +2970,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back_arrows
 drawable background_bt_black
 drawable background_bt_orange
 drawable background_bt_white
@@ -3097,6 +3098,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id about_us_rv
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3153,6 +3155,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_team_photo
 id add
 id alertTitle
 id aligned
@@ -3287,6 +3290,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id go_back
 id gone
 id graph
 id graph_wrap
@@ -3306,6 +3310,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3533,6 +3538,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id team_photo
 id text
 id text2
 id textEnd
@@ -3540,9 +3546,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_view_2
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3570,6 +3578,7 @@ id uniform
 id unlabeled
 id up
 id us_button
+id us_rv
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3704,6 +3713,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_us
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3722,7 +3732,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_about_us
 layout item_dog
+layout item_us
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

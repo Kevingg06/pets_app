@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         call()
+        actions()
         observer()
     }
 
@@ -65,5 +67,24 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView(value: List<String>) {
         val adapter = DogsAdapter(value)
         binding.recyclerDogs.adapter = adapter
+    }
+
+    fun actions(){
+        binding.usButton.setOnClickListener {
+            val myIntent = Intent(this, UsActivity::class.java)
+            startActivity(myIntent)
+        }
+        binding.dogsButton.setOnClickListener {
+            // val myIntent = Intent(this, DogsActivity::class.java)
+            // startActivity(myIntent)
+        }
+        binding.randomButton.setOnClickListener {
+            // val myIntent = Intent(this, RandomActivity::class.java)
+            // startActivity(myIntent)
+        }
+        binding.searchButton.setOnClickListener {
+            // val myIntent = Intent(this, SearchActivity::class.java)
+            // startActivity(myIntent)
+        }
     }
 }
