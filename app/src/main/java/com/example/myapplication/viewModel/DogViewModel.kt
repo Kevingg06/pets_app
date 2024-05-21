@@ -28,3 +28,4 @@ class DogViewModel(private val repository: DogRepository = DogRepository()) : Vi
         }
     }
 }
+

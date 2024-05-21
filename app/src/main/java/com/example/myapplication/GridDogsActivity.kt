@@ -54,10 +54,11 @@ class GridDogsActivity : AppCompatActivity() {
             }
         }
 
-        viewModel.selectedImageUrl.observe(this) { imageUrl ->
-            if (imageUrl != null) {
-                navigateToImageDetails(imageUrl)
-            }
+        viewModel.selectedImageUrl.observe(this) { //imageUrl ->
+            //if (imageUrl != null) {
+                //navigateToImageDetails(imageUrl)
+                navigateToImageDetails()
+            //}
         }
     }
 
@@ -68,9 +69,10 @@ class GridDogsActivity : AppCompatActivity() {
 
     }
 
-    private fun navigateToImageDetails(imageUrl: String) {
-        val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("imageUrl", imageUrl)
+    //private fun navigateToImageDetails(imageUrl: String) {
+    private fun navigateToImageDetails() {
+        val intent = Intent(this, DetailsDogsActivity::class.java)
+        //intent.putExtra("imageUrl", imageUrl)
         startActivity(intent)
     }
 

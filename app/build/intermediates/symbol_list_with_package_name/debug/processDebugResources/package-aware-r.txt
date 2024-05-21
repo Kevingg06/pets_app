@@ -2968,6 +2968,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable adoptar
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_bt_black
@@ -2987,6 +2988,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable doctor_stethoscope
+drawable dog1
+drawable dog_food
+drawable dog_paw
+drawable home_detail
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3223,6 +3229,8 @@ id currentState
 id custom
 id customPanel
 id cut
+id cv_1
+id cv_2
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3243,6 +3251,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id doctor_button
 id dog_img
 id dogs_button
 id dragAnticlockwise
@@ -3283,6 +3292,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id food_button
 id forever
 id fragment_container_view_tag
 id frost
@@ -3290,6 +3300,8 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gl_end
+id gl_first
+id gl_last
 id gone
 id graph
 id graph_wrap
@@ -3303,6 +3315,7 @@ id hide_ime_id
 id hideable
 id home
 id homeAsUp
+id home_button
 id honorRequest
 id horizontal_only
 id icon
@@ -3310,7 +3323,10 @@ id icon_group
 id ifRoom
 id ignore
 id ignoreRequest
+id im_adopt
 id im_btn_back
+id im_detail
+id im_dogface
 id im_fingerprint
 id im_search
 id image
@@ -3335,9 +3351,12 @@ id linear
 id linearLayout
 id listMode
 id list_item
+id ll_details1
+id ll_details2
 id loading_screen
 id m3_side_sheet
 id main
+id main_details
 id marquee
 id masked
 id match_constraint
@@ -3444,6 +3463,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id paw_button
 id peekHeight
 id percent
 id pin
@@ -3574,6 +3594,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_features
 id unchecked
 id uniform
 id unlabeled
@@ -3712,6 +3733,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detailsdogs
 layout activity_griddogs
 layout activity_main
 layout custom_dialog

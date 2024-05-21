@@ -34,5 +34,7 @@ class GridDogViewModel(private val repository: GridDogRepository = GridDogReposi
 
     fun onImageClicked(imageUrl: String) {
         _selectedImageUrl.value = imageUrl
+        ImageGridClick.imageGrid = imageUrl
     }
 }
+
