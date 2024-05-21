@@ -30,10 +30,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final AppCompatButton dogsButton;
 
   @NonNull
-  public final LinearLayout linearLayout;
+  public final LinearLayout layoutButtons;
 
   @NonNull
   public final RelativeLayout loadingScreen;
+
+  @NonNull
+  public final ImageView logoImage;
 
   @NonNull
   public final ConstraintLayout main;
@@ -45,25 +48,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RecyclerView recyclerDogs;
 
   @NonNull
-  public final ImageView textView;
-
-  @NonNull
   public final AppCompatButton usButton;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView burgerMenu,
-      @NonNull AppCompatButton dogsButton, @NonNull LinearLayout linearLayout,
-      @NonNull RelativeLayout loadingScreen, @NonNull ConstraintLayout main,
-      @NonNull AppCompatButton randomButton, @NonNull RecyclerView recyclerDogs,
-      @NonNull ImageView textView, @NonNull AppCompatButton usButton) {
+      @NonNull AppCompatButton dogsButton, @NonNull LinearLayout layoutButtons,
+      @NonNull RelativeLayout loadingScreen, @NonNull ImageView logoImage,
+      @NonNull ConstraintLayout main, @NonNull AppCompatButton randomButton,
+      @NonNull RecyclerView recyclerDogs, @NonNull AppCompatButton usButton) {
     this.rootView = rootView;
     this.burgerMenu = burgerMenu;
     this.dogsButton = dogsButton;
-    this.linearLayout = linearLayout;
+    this.layoutButtons = layoutButtons;
     this.loadingScreen = loadingScreen;
+    this.logoImage = logoImage;
     this.main = main;
     this.randomButton = randomButton;
     this.recyclerDogs = recyclerDogs;
-    this.textView = textView;
     this.usButton = usButton;
   }
 
@@ -106,15 +106,21 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.layout_buttons;
+      LinearLayout layoutButtons = ViewBindings.findChildViewById(rootView, id);
+      if (layoutButtons == null) {
         break missingId;
       }
 
       id = R.id.loading_screen;
       RelativeLayout loadingScreen = ViewBindings.findChildViewById(rootView, id);
       if (loadingScreen == null) {
+        break missingId;
+      }
+
+      id = R.id.logo_image;
+      ImageView logoImage = ViewBindings.findChildViewById(rootView, id);
+      if (logoImage == null) {
         break missingId;
       }
 
@@ -132,12 +138,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      ImageView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
       id = R.id.us_button;
       AppCompatButton usButton = ViewBindings.findChildViewById(rootView, id);
       if (usButton == null) {
@@ -145,7 +145,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, burgerMenu, dogsButton,
-          linearLayout, loadingScreen, main, randomButton, recyclerDogs, textView, usButton);
+          layoutButtons, loadingScreen, logoImage, main, randomButton, recyclerDogs, usButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

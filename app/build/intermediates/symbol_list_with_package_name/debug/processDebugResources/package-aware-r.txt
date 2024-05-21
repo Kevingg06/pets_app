@@ -3318,16 +3318,17 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_buttons
 id left
 id leftToRight
 id legacy
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id loading_screen
+id logo_image
 id m3_side_sheet
 id main
 id marquee
@@ -3539,7 +3540,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
