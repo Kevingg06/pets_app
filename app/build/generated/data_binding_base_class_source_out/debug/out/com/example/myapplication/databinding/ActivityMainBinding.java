@@ -48,13 +48,17 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RecyclerView recyclerDogs;
 
   @NonNull
+  public final AppCompatButton searchButton;
+
+  @NonNull
   public final AppCompatButton usButton;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView burgerMenu,
       @NonNull AppCompatButton dogsButton, @NonNull LinearLayout layoutButtons,
       @NonNull RelativeLayout loadingScreen, @NonNull ImageView logoImage,
       @NonNull ConstraintLayout main, @NonNull AppCompatButton randomButton,
-      @NonNull RecyclerView recyclerDogs, @NonNull AppCompatButton usButton) {
+      @NonNull RecyclerView recyclerDogs, @NonNull AppCompatButton searchButton,
+      @NonNull AppCompatButton usButton) {
     this.rootView = rootView;
     this.burgerMenu = burgerMenu;
     this.dogsButton = dogsButton;
@@ -64,6 +68,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.main = main;
     this.randomButton = randomButton;
     this.recyclerDogs = recyclerDogs;
+    this.searchButton = searchButton;
     this.usButton = usButton;
   }
 
@@ -138,6 +143,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.search_button;
+      AppCompatButton searchButton = ViewBindings.findChildViewById(rootView, id);
+      if (searchButton == null) {
+        break missingId;
+      }
+
       id = R.id.us_button;
       AppCompatButton usButton = ViewBindings.findChildViewById(rootView, id);
       if (usButton == null) {
@@ -145,7 +156,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, burgerMenu, dogsButton,
-          layoutButtons, loadingScreen, logoImage, main, randomButton, recyclerDogs, usButton);
+          layoutButtons, loadingScreen, logoImage, main, randomButton, recyclerDogs, searchButton,
+          usButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,14 +1,26 @@
 [
     {
+        "merged": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-3:\\layout\\activity_us.xml",
+        "source": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-6:\\layout\\activity_us.xml"
+    },
+    {
         "merged": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-3:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-6:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/item_dog.xml",
-        "source": "com.example.myapplication.app-main-6:/layout/item_dog.xml"
-    },
-    {
         "merged": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-3:\\layout\\item_dog.xml",
         "source": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-6:\\layout\\item_dog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-3:\\layout\\item_about_us.xml",
+        "source": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-6:\\layout\\item_about_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-mergeDebugResources-3:\\layout\\item_us.xml",
+        "source": "C:\\Users\\Flia Gonzalez\\.gradle\\daemon\\8.4\\com.example.myapplication.app-main-6:\\layout\\item_us.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/item_about_us.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/item_about_us.xml"
     }
 ]
