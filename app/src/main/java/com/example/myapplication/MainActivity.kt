@@ -86,8 +86,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
         binding.searchButton.setOnClickListener {
-            // val myIntent = Intent(this, SearchActivity::class.java)
-            // startActivity(myIntent)
+            val myIntent = Intent(this, SearchActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
