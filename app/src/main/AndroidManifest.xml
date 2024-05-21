@@ -15,7 +15,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsDogsActivity"
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RandomDogActivity"
             android:exported="false" />
         <activity
             android:name=".GridDogsActivity"

@@ -3,10 +3,10 @@ package com.example.myapplication.response
 
 import com.google.gson.annotations.SerializedName
 
-data class DogResponse(
+data class RandomDogResponse(
 
     @SerializedName("message")
-    val message: List<String>?,
+    val message: String?,
 
     @SerializedName("status")
     val status: String?

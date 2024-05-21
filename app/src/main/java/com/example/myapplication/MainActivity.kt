@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -30,10 +29,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.dogsButton.setOnClickListener {
-            startActivity(Intent(this, GridDogsActivity::class.java))
-        }
+
         call()
+        actions()
         observer()
     }
 
@@ -46,15 +44,15 @@ class MainActivity : AppCompatActivity() {
             when (data) {
                 is StateViewModel.Success -> {
                     hideLoading()
-                    initRecyclerView(data.info.message ?: listOf())
+                    initRecyclerView(data.info.message ?: listOf("https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg"))
                 }
 
-                is StateViewModel.loading -> {
+                is StateViewModel.Loading -> {
                     showLoading()
                 }
 
                 is StateViewModel.Error -> {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+
                 }
 
             }
@@ -72,5 +70,24 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView(value: List<String>) {
         val adapter = DogsAdapter(value)
         binding.recyclerDogs.adapter = adapter
+    }
+
+    fun actions(){
+        binding.usButton.setOnClickListener {
+            val myIntent = Intent(this, UsActivity::class.java)
+            startActivity(myIntent)
+        }
+        binding.dogsButton.setOnClickListener {
+            val myIntent = Intent(this, GridDogsActivity::class.java)
+            startActivity(myIntent)
+        }
+        binding.randomButton.setOnClickListener {
+            val myIntent = Intent(this, RandomDogActivity::class.java)
+            startActivity(myIntent)
+        }
+        binding.searchButton.setOnClickListener {
+            val myIntent = Intent(this, SearchActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
