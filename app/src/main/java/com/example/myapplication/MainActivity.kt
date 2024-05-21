@@ -57,6 +57,9 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        viewModel.getImage().observe(this) {
+            navigateToImageDetails()
+        }
     }
 
     private fun showLoading(){
@@ -68,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView(value: List<String>) {
-        val adapter = DogsAdapter(value)
+        val adapter = DogsAdapter(value, viewModel::onImageClicked)
         binding.recyclerDogs.adapter = adapter
     }
 
@@ -89,5 +92,10 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, SearchActivity::class.java)
             startActivity(myIntent)
         }
+    }
+
+    private fun navigateToImageDetails() {
+        val intent = Intent(this, DetailsDogsActivity::class.java)
+        startActivity(intent)
     }
 }

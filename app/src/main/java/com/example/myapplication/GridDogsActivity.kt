@@ -63,7 +63,7 @@ class GridDogsActivity : AppCompatActivity() {
 
     }
 
-    //private fun navigateToImageDetails(imageUrl: String) {
+
     private fun navigateToImageDetails() {
         val intent = Intent(this, DetailsDogsActivity::class.java)
         startActivity(intent)

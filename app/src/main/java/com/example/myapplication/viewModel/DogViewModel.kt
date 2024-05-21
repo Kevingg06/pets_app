@@ -13,6 +13,9 @@ class DogViewModel(private val repository: DogRepository = DogRepository()) : Vi
     private val _data = MutableLiveData<StateViewModel>()
     val data: LiveData<StateViewModel> = _data
 
+    private val _selectedImageUrl = MutableLiveData<String?>()
+    private val selectedImageUrl: LiveData<String?> = _selectedImageUrl
+
     fun getDogs() {
         CoroutineScope(Dispatchers.IO).launch {
             _data.postValue(StateViewModel.Loading)
@@ -25,6 +28,15 @@ class DogViewModel(private val repository: DogRepository = DogRepository()) : Vi
                 _data.postValue(StateViewModel.Error("Service error"))
             }
         }
+    }
+
+    fun getImage(): LiveData<String?>{
+        return this.selectedImageUrl
+    }
+
+    fun onImageClicked(imageUrl: String): Unit {
+        _selectedImageUrl.value = imageUrl
+        ImageClass.imageGrid = imageUrl
     }
 }
 
