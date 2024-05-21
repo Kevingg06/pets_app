@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         binding.dogsButton.setOnClickListener {
             startActivity(Intent(this, GridDogsActivity::class.java))
         }
+
+        binding.randomButton.setOnClickListener {
+            startActivity(Intent(this, RandomDogActivity::class.java))
+        }
+
         call()
         observer()
     }
