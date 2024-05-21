@@ -8,7 +8,7 @@ import com.example.myapplication.databinding.ItemGriddogsBinding
 import com.squareup.picasso.Picasso
 
 
-class GridDogsAdapter(private val dogList: List<String>) : RecyclerView.Adapter<GridDogsHolder>() {
+class GridDogsAdapter(private val dogList: List<String>, private val onImageClicked: (String) -> Unit) : RecyclerView.Adapter<GridDogsHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridDogsHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_griddogs,parent,false)
         return  GridDogsHolder(view)
@@ -19,7 +19,7 @@ class GridDogsAdapter(private val dogList: List<String>) : RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(holder: GridDogsHolder, position: Int) {
-        holder.render(dogList[position])
+        holder.render(dogList[position], onImageClicked)
     }
 }
 
@@ -27,7 +27,11 @@ class GridDogsHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     private val binding = ItemGriddogsBinding.bind(view)
 
-    fun render(value : String){
+    fun render(value: String, value1: (String) -> Unit){
         Picasso.get().load(value).into(binding.gridDogImg)
+
+        itemView.setOnClickListener {
+            value1(value)
+        }
     }
 }

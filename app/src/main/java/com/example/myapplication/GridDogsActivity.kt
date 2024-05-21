@@ -53,13 +53,25 @@ class GridDogsActivity : AppCompatActivity() {
                 }
             }
         }
+
+        viewModel.selectedImageUrl.observe(this) { imageUrl ->
+            if (imageUrl != null) {
+                navigateToImageDetails(imageUrl)
+            }
+        }
     }
 
     private fun initRecyclerView(value: List<String>) {
         binding.recyclerGridDogs.layoutManager = GridLayoutManager(this, 3)
-        val adapter = GridDogsAdapter(value)
+        val adapter = GridDogsAdapter(value, viewModel::onImageClicked)
         binding.recyclerGridDogs.adapter = adapter
 
+    }
+
+    private fun navigateToImageDetails(imageUrl: String) {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("imageUrl", imageUrl)
+        startActivity(intent)
     }
 
 }
