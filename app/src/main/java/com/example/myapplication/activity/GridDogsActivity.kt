@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.myapplication.adapter.GridDogsAdapter
 import com.example.myapplication.databinding.ActivityGriddogsBinding
 import com.example.myapplication.viewModel.GridDogViewModel
 import com.example.myapplication.viewModel.StateGridViewModel
@@ -39,12 +40,14 @@ class GridDogsActivity : AppCompatActivity() {
     private fun callGrid() {
         viewModel.getGridDogs()
     }
+
     private fun observer() {
         viewModel.getData().observe(this) { data ->
             when (data) {
                 is StateGridViewModel.Success -> {
                     initRecyclerView(data.info.message ?: listOf())
                 }
+
                 is StateGridViewModel.Error -> {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
                 }
@@ -52,7 +55,7 @@ class GridDogsActivity : AppCompatActivity() {
         }
 
         viewModel.getImage().observe(this) {
-                navigateToImageDetails()
+            navigateToImageDetails()
         }
     }
 

@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.myapplication.R
+import com.example.myapplication.adapter.DogsAdapter
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.viewModel.DogViewModel
-import com.example.myapplication.viewModel.StateGridViewModel
 import com.example.myapplication.viewModel.StateViewModel
 
 
@@ -44,7 +45,9 @@ class MainActivity : AppCompatActivity() {
             when (data) {
                 is StateViewModel.Success -> {
                     hideLoading()
-                    initRecyclerView(data.info.message ?: listOf("https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg"))
+                    initRecyclerView(
+                        data.info.message ?: listOf("https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg")
+                    )
                 }
 
                 is StateViewModel.Loading -> {
@@ -62,11 +65,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showLoading(){
+    private fun showLoading() {
         binding.loadingScreen.visibility = View.VISIBLE
     }
 
-    private fun hideLoading(){
+    private fun hideLoading() {
         binding.loadingScreen.visibility = View.GONE
     }
 
@@ -75,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerDogs.adapter = adapter
     }
 
-    fun actions(){
+    fun actions() {
         binding.usButton.setOnClickListener {
             val myIntent = Intent(this, UsActivity::class.java)
             startActivity(myIntent)

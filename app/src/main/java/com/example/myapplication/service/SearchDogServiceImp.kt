@@ -19,5 +19,4 @@ class SearchDogServiceImp {
     suspend fun getSearchDogs(breed: String): Response<SearchDogResponse> {
         return service.getSearchDogs(breed)
     }
-
 }

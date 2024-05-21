@@ -31,5 +31,4 @@ class RandomDogViewModel(private val repository: RandomDogRepository = RandomDog
     fun getData(): LiveData<StateRandomDogViewModel>{
         return this.data
     }
-
 }

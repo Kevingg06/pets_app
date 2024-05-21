@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -51,6 +51,7 @@ class SearchActivity : AppCompatActivity() {
                 is StateSearchDogViewModel.Success -> {
                     initImage((data.info.message ?: "").toString())
                 }
+
                 is StateSearchDogViewModel.Error -> {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
                 }

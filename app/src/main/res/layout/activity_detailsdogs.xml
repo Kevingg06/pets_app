@@ -5,7 +5,7 @@
     android:id="@+id/main_details"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsDogsActivity">
+    tools:context=".activity.DetailsDogsActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_first"
@@ -148,7 +148,9 @@
                 android:id="@+id/tv_features"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp">
+                android:textSize="20sp"
+                android:text="Texto de ejemplo."
+                >
             </TextView>
 
         </LinearLayout>
