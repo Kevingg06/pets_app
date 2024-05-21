@@ -25,13 +25,20 @@ class UsActivity : AppCompatActivity() {
         }
 
         val imageList = listOf(
-            "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg",
-            "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg",
-            "https://images.dog.ceo/breeds/terrier-welsh/lucy.jpg"
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=kevin-p",
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=reinier-p",
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=jhosep-p"
         )
+
+        val imageListHobbie = listOf(
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=kevin-h",
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=reinier-h",
+            "https://minio.api.abexacloud.com/api/Archivo/verImagen?NombreCarpeta=kotlin-app&NombreImagen=jhosep-h"
+        )
+
         actions()
         initRecyclerView(imageList)
-        initRecyclerView2(imageList)
+        initRecyclerView2(imageListHobbie)
     }
 
     private fun actions() {
